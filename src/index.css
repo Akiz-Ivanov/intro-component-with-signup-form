@@ -33,13 +33,13 @@
         min-height: 100dvh;
         background-image: url("./assets/images/bg-intro-mobile.png");
 
-        @media (min-width: 1024px) {
+        @media (min-width: 64rem) {
             background-image: url("./assets/images/bg-intro-desktop.png");
         }
     }
 
     input {
-        @apply border border-neutral-grayish-blue rounded-sm p-4 text-neutral-dark-blue placeholder:font-bold font-medium caret-accent-blue text-14-16 pl-16-32 pr-11;
+        @apply border border-neutral-grayish-blue rounded-sm p-4 text-neutral-dark-blue placeholder:font-bold font-medium caret-accent-blue text-14-16 pl-16-32 pe-11;
     }
 
     @media (prefers-reduced-motion: reduce) {
