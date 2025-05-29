@@ -84,8 +84,10 @@ export default function FormComponent(): React.JSX.Element {
                 key={name}
                 name={name}
                 render={({ field }) => (
-                    <FormItem>
-                        <FormLabel className="sr-only">{label}</FormLabel>
+                    <FormItem id={`${name}-form-item`}>
+                        <FormLabel htmlFor={name} className="sr-only">
+                            {label}
+                        </FormLabel>
                         <FormControl>
                             <div className="relative">
                                 <Input
@@ -100,7 +102,7 @@ export default function FormComponent(): React.JSX.Element {
                                 )}
                             </div>
                         </FormControl>
-                        <FormMessage className="text-right text-primary-red italic text-xs font-medium" />
+                        <FormMessage id={`${name}-form-message`} className="text-right text-primary-red italic text-xs font-medium" />
                     </FormItem>
                 )}
             />
