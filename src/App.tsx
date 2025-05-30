@@ -47,13 +47,11 @@ function App(): React.JSX.Element {
               <Form />
 
               <p className="text-neutral-grayish-blue text-xs text-pretty px-3">
-                By clicking the button, you are agreeing to our
+                By clicking the button, you are agreeing to our&nbsp;
                 <a
                   href="#"
-                  className="text-primary-red font-bold focus-visible:border-accent-blue focus-visible:border-2 hover:underline focus-visible:outline-none"
-                >
-                  Terms and Services
-                </a>
+                  className="text-primary-red font-bold focus-visible:border-accent-blue focus-visible:border-2 hover:underline focus-visible:outline-none "
+                >Terms and Services</a>
               </p>
 
             </div>
